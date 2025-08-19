@@ -50,5 +50,5 @@ JournAPIは複式簿記の原則に従って設計されている。
 
 ## ドキュメント
 優先度: 高
-- [API アウトライン](docs/api-outline.md)
+- [API アウトライン](docs/01_high_api-outline.md)
 - [ER 図](docs/01_high_er_diagram.md)
