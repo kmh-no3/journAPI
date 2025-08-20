@@ -6,10 +6,10 @@
 erDiagram
     accounts {
         int id PK
-        string code "科目コード(UNIQUE)"
+        string code "科目コードUNIQUE"
         string name "科目名"
         enum type "asset/liability/equity/revenue/expense"
-        int parent_id FK "親科目(任意)"
+        int parent_id FK "親科目任意"
         bool is_active
     }
 
@@ -34,7 +34,6 @@ erDiagram
     %% Relations
     accounts ||--o{ journal_lines : "1:N 科目→明細"
     journal_headers ||--o{ journal_lines : "1:N 仕訳→明細"
-
 ```
 
 ## 構成メモ

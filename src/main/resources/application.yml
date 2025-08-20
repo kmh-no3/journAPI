@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: journapi
+  profiles:
+    default: dev #未指定の場合はdev
+  
+  server:
+    port: 8080
+  
+  logging:
+    level:
+      root: INFO
+      com.example.journapi: DEBUG

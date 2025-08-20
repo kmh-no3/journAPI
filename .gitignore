@@ -1,3 +1,196 @@
-# 参考ドキュメント
-reference/
+################################################################################
+# Java Development
+################################################################################
 
+## Java Runtime
+### Compiled class file
+*.class
+
+### BlueJ files
+*.ctxt
+
+### Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+### Package Files
+*.jar
+*.war
+*.nar
+*.ear
+
+### Virtual machine crash logs
+# See http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+## Maven
+target/
+build/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://maven.apache.org/wrapper/#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
+
+## Spring Boot
+*.pid
+*.pid.lock
+
+################################################################################
+# Development Environment
+################################################################################
+
+## IDE
+### VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+### Built Visual Studio Code Extensions
+*.vsix
+
+### Cursor
+.cursorignore
+.cursorindexingignore
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+################################################################################
+# Operating System
+################################################################################
+
+## macOS
+### General
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon[]
+
+### Thumbnails
+._*
+
+### Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+### Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+## Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+## Common Archive Files
+*.zip
+*.tar.gz
+*.rar
+
+################################################################################
+# Application Specific
+################################################################################
+
+## Environment Configuration
+### Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+### Application properties for different environments
+# Uncomment if you have sensitive environment-specific configs
+# src/main/resources/application-*.yml
+# src/main/resources/application-*.properties
+
+## Data & Storage
+### Database
+*.db
+*.sqlite
+*.sqlite3
+
+### Database migration files
+# Uncomment if you don't want to version control migration files
+# src/main/resources/db/migration/
+
+## Runtime & Logs
+### Logs
+*.log
+logs/
+
+### Runtime data
+pids
+*.seed
+
+### Temporary folders
+tmp/
+temp/
+*.tmp
+*.temp
+
+## Containerization & Testing
+### Docker
+.dockerignore
+
+### Test containers
+testcontainers.properties
+
+## Documentation
+### Reference documents
+docs/reference/
+
+### Generated documentation
+docs/generated/
+
+HELP.md
+!**/src/main/**/target/
+!**/src/test/**/target/

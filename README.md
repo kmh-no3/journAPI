@@ -2,6 +2,9 @@
 
 ## 目次
 1. [プロジェクト概要](#プロジェクト概要)
+2. [プロジェクト構築](#プロジェクト構築)
+3. [開発優先度](#開発優先度)
+4. [ドキュメント](#ドキュメント)
 
 ## プロジェクト概要
 
@@ -24,6 +27,43 @@ JournAPIは複式簿記の原則に従って設計されている。
 - **勘定科目体系**: 資産、負債、純資産、収益、費用の5つの区分
 - **期間管理**: 会計期間（YYYY-MM）による取引の管理
 - **データ整合性**: 仕訳→元帳→試算表の一貫性を保証
+
+## プロジェクト構築
+
+### Spring Boot Initializr コマンド
+
+このプロジェクトは以下のSpring Boot Initializrコマンドで作成されました：
+
+```bash
+curl https://start.spring.io/starter.zip \
+  -d type=maven-project \
+  -d language=java \
+  -d bootVersion=3.5.4 \
+  -d javaVersion=21 \
+  -d groupId=com.journapi \
+  -d artifactId=journapi \
+  -d name=JournAPI \
+  -d packaging=jar \
+  -d dependencies=web,data-jpa,validation,postgresql,flyway,lombok \
+  -o journapi.zip
+unzip -q journapi.zip -d journapi
+```
+
+### 使用技術スタック
+
+- **Spring Boot**: 3.5.4
+- **Java**: 21
+- **Maven**: プロジェクト管理
+- **Spring Web**: RESTful API
+- **Spring Data JPA**: データアクセス
+- **Spring Validation**: 入力検証
+- **PostgreSQL**: データベース
+- **Flyway**: データベースマイグレーション
+- **Lombok**: ボイラープレートコード削減
+
+### 環境設定
+
+詳細な環境設定については [environment_rules.md](environment_rules.md) を参照してください。
 
 ## 開発優先度
 **優先度: 高**
