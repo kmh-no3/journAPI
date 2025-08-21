@@ -1,4 +1,4 @@
-# JournAPI - API アウトライン（優先度: 高 完整版）
+# JournAPI - API アウトライン（優先度: 高）
 
 ベースURL: `/api/v1`  
 形式: JSON
